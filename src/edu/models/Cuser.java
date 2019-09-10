@@ -3,6 +3,7 @@ package edu.models;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Cuser {
 	private String nom;
@@ -10,7 +11,7 @@ public class Cuser {
 	private int age;
 	private List<Cgroup> groupes;
 	private List<Cconnexion> connexions;
-	private List<Cpreference> preferences;
+	private Cpreferences prefs;
 	
 	public Cuser(String nom) {
 		super();
@@ -19,7 +20,7 @@ public class Cuser {
 		this.age = 18;
 		this.connexions =new ArrayList<Cconnexion>();
 		this.groupes =new ArrayList<Cgroup>();
-		this.preferences =Cpreference.getDefault();
+		this.prefs =Cpreferences.getDefault();
 	}
 	public String getPrenom() {return prenom;}
 	public void setPrenom(String prenom) {this.prenom = prenom;}
@@ -78,6 +79,6 @@ public class Cuser {
 
 	@Override
 	public String toString() {
-		return nom +groupes;
+		return nom +groupes+prefs;
 	}
 }
