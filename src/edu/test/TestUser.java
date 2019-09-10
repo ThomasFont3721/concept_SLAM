@@ -1,6 +1,5 @@
 package edu.test;
 
-import edu.models.Cgroup;
 import edu.models.Cuser;
 
 public class TestUser {
@@ -10,8 +9,8 @@ public class TestUser {
 		System.out.println(user);
 		user.postLogin();
 		user.listConnexion();
-		Cgroup groupe = new Cgroup("number 1");
-		user.addToGroup(groupe.getNom());
+		
+		
 		/*Integer j =0;
 		while (j<10) {
 			System.out.print(j);

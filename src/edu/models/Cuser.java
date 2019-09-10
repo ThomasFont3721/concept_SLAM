@@ -3,7 +3,6 @@ package edu.models;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class Cuser {
 	private String nom;
@@ -34,7 +33,7 @@ public class Cuser {
 	}
 	
 	public String afficher() {
-		return this.nom +" "+this.prenom;
+		return "Nom : "+this.nom +"\nPrénom : "+this.prenom;
 	}
 	
 	/**
@@ -79,6 +78,6 @@ public class Cuser {
 
 	@Override
 	public String toString() {
-		return nom +groupes+prefs;
+		return "Nom : "+nom+";\nGroupe(s) :" +groupes+";\n"+prefs;
 	}
 }

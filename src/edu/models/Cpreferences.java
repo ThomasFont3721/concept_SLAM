@@ -32,6 +32,6 @@ public class Cpreferences {
 	}
 	@Override
 	public String toString() {
-		return "Preferences : "+prefs;
+		return "Preferences : ["+prefs+"];";
 	}
 }
